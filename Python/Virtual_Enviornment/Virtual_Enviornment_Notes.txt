@@ -1,0 +1,17 @@
+ VIRTUAL ENVIRONMENT  -- IT IS A WAY THROUGH WHICH I CAN SEPERATE MUTIPLE PROJECTS BY USING DIFFRENT DEPENDENCIES IN DIFFRENT PROJECTS SO THAT THEY DON'T BREAK 
+
+ pip install virtualenv -- It Installs the virtualenv tool in Python env (IT IS OUTDATED SO USE THE BUILT IN VENV MODULE )
+
+ python3 -m venv project_env  -- Creates a virtualenv using venv module 
+
+ source project_env/bin/activate -- It activates your virtualenv ( We start using it ! )
+
+ EXTRA-->    which    -- Tells you the exact path from where the command is being executed 
+
+ pip freeze --local  -- Takes only the local DEPENDENCIES (That you have in your virtualenv)
+
+ deactivate   -- Leaves the virtualenv
+
+ rm -rf project_env    -- Deletes virtualenv
+
+ FOR USING SPECIFIC PYTHON VERSION -->  python3.12 -m  venv specific_version_env 
