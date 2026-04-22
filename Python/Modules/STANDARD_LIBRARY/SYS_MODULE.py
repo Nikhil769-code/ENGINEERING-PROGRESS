@@ -1,17 +1,27 @@
-import sys
-# Sys is a library in python which allows you to manipulate runtime enviornment
+import sys  
+# sys:
+# - Provides access to Python runtime environment
+# - sys.path → list of directories Python searches for modules
+
+
+# -------------------- Modifying Module Search Path --------------------
+
 sys.path.append('/mnt/c/Users/Administrator/Desktop/My_module')
+# Adds a new directory to Python's module search path
+# Allows importing modules from this custom location
 
-# Here I have added the path location of my_moudle to sys.path so that I can import that module in any program . 
+
+# NOTE:
+# This change is temporary (only for current script/runtime)
+# For permanent setup → use PYTHONPATH or install the module properly
 
 
-'''Even if the program shows a error like my_module not exist , then also program get's exectued. '''
-
+# -------------------- Importing Custom Module --------------------
 
 import my_module
-
-# my_module successfully imported
-
+# Python searches sys.path → finds module in appended directory → imports it
 
 
-
+# IMPORTANT:
+# If the module truly does not exist in any path → ImportError will occur
+# It will NOT execute successfully if module is missing
